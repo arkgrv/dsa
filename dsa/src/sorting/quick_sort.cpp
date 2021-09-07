@@ -1,5 +1,4 @@
 #include <vector>
-#include <iostream>
 #include "sorting.h"
 
 int partition(std::vector<int>& vec, int left, int right)

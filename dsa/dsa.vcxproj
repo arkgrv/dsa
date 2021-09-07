@@ -21,10 +21,16 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\sorting\bubble_sort.cpp" />
+    <ClCompile Include="src\sorting\bucket_sort.cpp" />
+    <ClCompile Include="src\sorting\comb_sort.cpp" />
+    <ClCompile Include="src\sorting\counting_sort.cpp" />
+    <ClCompile Include="src\sorting\heap_sort.cpp" />
     <ClCompile Include="src\sorting\insertion_sort.cpp" />
     <ClCompile Include="src\sorting\merge_sort.cpp" />
     <ClCompile Include="src\sorting\quick_sort.cpp" />
+    <ClCompile Include="src\sorting\radix_sort.cpp" />
     <ClCompile Include="src\sorting\selection_sort.cpp" />
+    <ClCompile Include="src\sorting\shell_sort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\sorting.h" />
