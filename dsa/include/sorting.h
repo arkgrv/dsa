@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DSA_SORTING_H
+#define DSA_SORTING_H
 
 #include <vector>
 
@@ -13,3 +14,5 @@ void comb_sort(std::vector<int>& vec);
 void counting_sort(std::vector<int>& vec);
 void bucket_sort(std::vector<int>& vec, int bucketsCount);
 void radix_sort(std::vector<int>& vec);
+
+#endif
