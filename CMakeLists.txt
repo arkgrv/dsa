@@ -12,6 +12,9 @@ else()
     set(CMAKE_CXX_FLAGS_RELEASE "-Os -fpic")
 endif()
 
+# Include directories
+include_directories(dsa/include)
+
 set(LIBRARY dsa)
 set(RUNNABLE dsa-example)
 
