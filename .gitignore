@@ -366,3 +366,6 @@ FodyWeavers.xsd
 build/
 cmake-build-debug/
 cmake-build-release/
+
+# Ignore Visual Studio Code configurations
+.vscode/
