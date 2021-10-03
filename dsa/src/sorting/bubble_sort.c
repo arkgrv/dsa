@@ -1,4 +1,5 @@
 #include "sorting.h"
+#include <stdint.h>
 
 void bubble_sort(void *base, size_t nitems, size_t s, int (*comp)(const void*, const void*))
 {
@@ -6,15 +7,16 @@ void bubble_sort(void *base, size_t nitems, size_t s, int (*comp)(const void*, c
         return;
         
     // base as char*
-    char *base_ptr = (char*) base;
+    uint8_t *base_ptr = (uint8_t*) base;
 
     size_t i, j;
     for (i = 0; i < nitems; ++i) {
         for (j = 0; j < nitems - i - 1; ++j) {
-            char *pos = (base_ptr + (s * j));
-            char *pos_next = (base_ptr + (s * (j + 1)));
-            if (comp((void*) pos, (void*) pos_next) > 0)
-                SWAP((void*) pos, (void*) pos_next, s);
+            uint8_t *pos = base_ptr + (s * j);
+            uint8_t *pos_next = base_ptr + (s * (j + 1));
+            
+            if (comp(pos, pos_next) > 0)
+                SWAP(pos, pos_next, s);
         }
     }
 }

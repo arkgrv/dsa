@@ -20,6 +20,10 @@ set(LIBRARY_SRC
     "dsa/src/sorting/insertion_sort.c"
     "dsa/src/sorting/selection_sort.c"
     "dsa/src/sorting/quick_sort.c"
+    "dsa/src/sorting/merge_sort.c"
+    "dsa/src/sorting/shell_sort.c"
+    "dsa/src/sorting/heap_sort.c"
+    "dsa/src/sorting/comb_sort.c"
 )
 
 add_library(${LIBRARY} STATIC ${LIBRARY_SRC})
